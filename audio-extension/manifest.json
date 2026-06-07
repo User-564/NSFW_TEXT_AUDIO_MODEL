@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "SafeAudio Capture",
+  "version": "1.0",
+  "description": "Real-time audio moderation",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
